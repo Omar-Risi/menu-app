@@ -46,7 +46,7 @@ function App () {
 
     const categorySource = "/burger.jpg";
     return (
-      <button className={(categoryName === currentCategoryName) ? "bg-orange-500/50 px-3 py-2 rounded-md text-orange-600 flex flex-col items-center flex-1" : " px-3 py-2 rounded-md text-gray-900 flex flex-col items-center flex-1" } onClick={() => {setCurrentCategoryName(categoryName)}}>
+      <button className={(categoryName === currentCategoryName) ? "bg-orange-500/50 px-3 py-2 rounded-md text-orange-600 flex flex-col items-center" : " px-3 py-2 rounded-md text-gray-900 flex flex-col items-center" } onClick={() => {setCurrentCategoryName(categoryName)}}>
         <div className={`bg-[url('${categorySource}')] bg-cover bg-center w-16 h-16 aspect-square rounded-md shadow-md`}></div>
         <p className="text-lg font-poppins font-semibold mt-1"> {categoryName} </p>
       </button>
