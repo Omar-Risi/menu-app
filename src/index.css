@@ -1,5 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif, serif;
+    font-weight: normal;
+}
+
+:root {
+    --clr-default: #14142f;
+    --clr-orange: #ff5900;
+}
+
+body {
+    padding:1rem;
+    background-color: #f0f0f0;
+    color: var(--clr-default);
+}
+
+.title-lg {
+    font-family: 'M PLUS 1p', sans-serif ,serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color:var(--clr-orange);
+}
+
+.ts {
+    margin-top: 2.25rem;
+}
+
+.orange {color:var(--clr-orange)}
+
+.category-box {
+    overflow-x: scroll;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.category-item {
+
+    background-color: transparent;
+    border:transparent;
+    padding:1rem;
+    border-radius: .5rem;
+
+    font-size: 1.4rem;
+
+    cursor: pointer;
+}
+
+.category-image {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px #0005;
+
+    aspect-ratio: 1/1;
+}
+
+.category-title {
+    font-weight: 700;
+}

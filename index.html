@@ -1,13 +1,42 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Menu </title>
-  </head>
-  <body class="bg-gray-100">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Menu App </title>
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+
+  <h1 class="title-lg orange">Cripsy Burgers</h1>
+  
+  <main>
+    <h3 class="title-lg ts orange">Menu</h3>
+
+    <menu class="category-box">
+
+      <button class="category-item">
+        <img src="./public/burger.jpg" alt="img" class="category-image">
+        <h4 class="category-title">Burgers</h4>
+      </button>
+
+      <button class="category-item">
+        <img src="./public/fries.jpg" alt="img" class="category-image">
+        <h4 class="category-title">Fries</h4>
+      </button>
+
+      <button class="category-item">
+        <img src="./public/sauce.jpg" alt="img" class="category-image">
+        <h4 class="category-title">Sides</h4>
+      </button>
+
+      <button class="category-item">
+        <img src="./public/coke.jpg" alt="img" class="category-image">
+        <h4 class="category-title">Drinks</h4>
+      </button>
+
+    </menu>
+
+  </main>
+</body>
 </html>
