@@ -5,6 +5,7 @@
     margin:0;
     font-family: 'Poppins', sans-serif, serif;
     font-weight: normal;
+    border:transparent;
 }
 
 :root {
@@ -16,13 +17,14 @@ body {
     padding:1rem;
     background-color: #f0f0f0;
     color: var(--clr-default);
+    font-smooth: always;
 }
 
 .title-lg {
     font-family: 'M PLUS 1p', sans-serif ,serif;
     font-size: 2.5rem;
-    font-weight: 800;
-    color:var(--clr-orange);
+    font-weight: 900;
+    color:var(--clr-default);
 }
 
 .ts {
@@ -62,4 +64,42 @@ body {
 
 .category-title {
     font-weight: 700;
+}
+
+.menu-item {
+    margin-top: .75rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+
+    background-color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 5px 5px #0005;
+
+    cursor: pointer;
+}
+
+.menu-item > .info {
+    text-align: left;
+}
+
+.menu-item > .info > h3 {
+    font-size: 1.35rem;
+    font-weight: 900;
+    font-family: 'M PLUS 1p', sans-serif, serif;
+}
+
+.menu-item > .info > p {
+    font-size: 1.15rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.menu-item > .info > .price {
+    color: var(--clr-orange);
+    font-weight: 700;
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+
 }
