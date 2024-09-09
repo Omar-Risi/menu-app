@@ -35,7 +35,7 @@ body {
 
 .category-box {
     overflow-x: scroll;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 1.25rem;
@@ -52,6 +52,13 @@ body {
 
     cursor: pointer;
 }
+
+.category-item[current] {
+    background-color: #ff590055;
+    box-shadow: 0 5px 5px #0003;
+}
+
+.category-item[current] > .category-title {color: var(--clr-orange);}
 
 .category-image {
     width: 6rem;

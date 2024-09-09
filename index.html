@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Menu App </title>
   <link rel="stylesheet" href="./src/index.css">
+  <script src="./src/index.js" defer></script>
 </head>
 <body>
 
@@ -15,22 +16,22 @@
 
     <menu class="category-box">
 
-      <button class="category-item">
+      <button class="category-item" id="burgers" onclick="setCategory('Burgers','#burgers')">
         <img src="./public/burger.jpg" alt="img" class="category-image">
         <h4 class="category-title">Burgers</h4>
       </button>
 
-      <button class="category-item">
+      <button class="category-item" id="fries" onclick="setCategory('Fries','#fries')">
         <img src="./public/fries.jpg" alt="img" class="category-image">
         <h4 class="category-title">Fries</h4>
       </button>
 
-      <button class="category-item">
-        <img src="./public/sauce.jpg" alt="img" class="category-image">
+      <button class="category-item" id="sides" onclick="setCategory('Sides','#sides')">
+        <img src="./public/sauce.jpg" alt="img" class="category-image" >
         <h4 class="category-title">Sides</h4>
       </button>
 
-      <button class="category-item">
+      <button class="category-item" id="drinks" onclick="setCategory('Drinks','#drinks')">
         <img src="./public/coke.jpg" alt="img" class="category-image">
         <h4 class="category-title">Drinks</h4>
       </button>
@@ -86,7 +87,10 @@
 
       </menu>
     </section>
-
   </main>
+
+  <section class="modal" open>
+
+  </section>
 </body>
 </html>
